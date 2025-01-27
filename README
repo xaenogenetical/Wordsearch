@@ -13,3 +13,4 @@ Files:
     README - This
     wordsearch.c - The C sourcecode
     Makefile - Directs 'make' to compile wordsearch.c, instructs 'make clean' to remove searcher.o
+    c-zipper.sh - Bash script to compress the folder containing these files into a '.tar.gz' compressed file, should be run from the parent directory of the folder containing the files you wish to compress
