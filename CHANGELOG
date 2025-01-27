@@ -1,0 +1,24 @@
+1/21/25 Began project, 
+        laid out intitial variables in main
+1/22/25 defined ints assigned to the direction of the words,
+        set up framework in main to call fit_into_puzzle method
+1/23/25 Began constructing fit_into_puzzle,
+        set up a randomized initial position for finding a spot for each word
+        Created Makefile
+1/24/25 added a piece to main to ensure that all words entered on the command line are converted to lowercase,
+        created function to place the word into the puzzle 
+            at the location found by fit_into_puzzle by finding an empty angle to place the word at (find_angle_for), added fill_grid and print_grid to fill the empty spaces with random chars
+        and print the grid to console respectively, updated fit_into_puzzle to have a more concise method of iterating through the grid
+        ERROR: Encountered a fatal error where the program does not run when more than one argument is passed on the command line. not sure of the reason, working to debug
+        Woke up in the morning, i tried to assign a value to a variable using == instead of =, fixed that, but now the find_angle_for method apparently does not actually put the
+            word in the puzzle, I'm gonna lose it
+        Turns out i must have messed up my method of placing words in, as it only seems to place the first letter, will investigate
+        I'm actually losing it this time. I placed the return statement inside the for loop so the program returned at the end of the first loop instead of after completing the
+            whole loop. Good news is the program seems to work now, it places the whole words in the array.
+        Added a check to ensure that no duplicate command line arguments, which prevents more than one of the same word from being added to the puzzle
+        Added a loop to convert all words to lowercase before inserting in order to prevent cheesing the puzzle by using capital letters
+        Performed final bug testing
+        Created README
+        Modified Makefile to include 'make clean'
+        Updated README
+        
