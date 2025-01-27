@@ -1,10 +1,10 @@
-This program is a wordsearch generator. To begin, call 'make' then execute searcher.o with at least 2 args.
+This program is a wordsearch generator. To begin, call 'make' then execute search.o with at least 2 args.
 
 Argument 1 is a positive integer <= 20. 
 
 Following args are single words ('cheese' or 'flying' not 'big truck').
 
-searcher.o will generate an arg1 x arg1 grid, place the provided words into the grid at a random position and angle, then fill the remainder of the grid with random letters
+search.o will generate an arg1 x arg1 grid, place the provided words into the grid at a random position and angle, then fill the remainder of the grid with random letters
 If a word cannot be fit into the grid, the program will print a message explaining this and then exit with code 1;
 The program will also exit with code 1 if duplicate words are provided on the command line. Only one of each word (case-insensitive) can be inserted into the puzzle.
 
@@ -12,5 +12,5 @@ Files:
     CHANGELOG - ASCII file detailing the development process.
     README - This
     wordsearch.c - The C sourcecode
-    Makefile - Directs 'make' to compile wordsearch.c, instructs 'make clean' to remove searcher.o
+    Makefile - Directs 'make' to compile wordsearch.c, instructs 'make clean' to remove search.o
     c-zipper.sh - Bash script to compress the folder containing these files into a '.tar.gz' compressed file, should be run from the parent directory of the folder containing the files you wish to compress
